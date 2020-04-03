@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hobby.leehyewoun.aplanner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="학점플래너"
+        android:roundIcon="@mipmap/icon_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- 시작 로딩 화면 -->
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 메인 화면 -->
+        <activity android:name=".MainActivity" />
+        <!-- 학점 기록 -->
+        <!-- 키보드가 올라왔을 때 입력창이 아래에 있다면 스크롤된다. -->
+        <activity
+            android:name=".ScoreActivity"
+            android:windowSoftInputMode="adjustUnspecified" />
+        <!-- 학점 기록 편집 -->
+        <activity android:name=".ScoreModifyActivity"/>
+    </application>
+
+</manifest>

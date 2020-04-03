@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 버튼의 배경 색상 -->
+    <!-- 버튼을 눌렀을 때 -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#50808080"/>
+            <stroke android:color="#50808080" android:width="1dp"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <!-- 버튼을 다시 눌러 선택해제 했을 때 -->
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#00ffffff"/>
+            <stroke android:color="#50808080" android:width="1dp"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</selector>
