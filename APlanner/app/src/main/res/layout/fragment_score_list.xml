@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/scoreList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:requiresFadingEdge="vertical"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false"/>
+
+    <TextView
+        android:id="@+id/txtNoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="리스트를 추가해주세요."
+        android:textColor="#50808080"
+        android:textSize="24sp" />
+
+</FrameLayout>

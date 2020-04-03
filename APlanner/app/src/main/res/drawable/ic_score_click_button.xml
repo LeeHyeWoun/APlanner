@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 글자의 배경 색상 -->
+    <!-- 글자를 누르고 있을 때 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#50808080"/>
+            <corners android:radius="7dp"/>
+        </shape>
+    </item>
+    <!-- 평상시 -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#00ffffff"/>
+        </shape>
+    </item>
+</selector>
